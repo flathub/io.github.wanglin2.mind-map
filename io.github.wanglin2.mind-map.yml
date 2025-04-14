@@ -30,24 +30,26 @@ modules:
     sources:
       - type: file
         only-arches: [x86_64]
-        url: https://github.com/wanglin2/mind-map/releases/download/electron-0.13.1/thoughts_0.13.1_amd64.deb
-        sha256: a5c5d80e35a1887fefd1fe882b43b254e127f65cbbd47c49b6754ccfd7abd1bb
+        url: https://github.com/wanglin2/mind-map/releases/download/electron-0.14.0/thoughts_0.14.0_amd64.deb
+        sha256: c3b8c6dfb168054c8c80d745d72a2c37dc41cb39c2b4be5a9b60ff665e42c43b
         dest-filename: thoughts.deb
         x-checker-data:
           type: json
           url: https://api.github.com/repos/wanglin2/mind-map/releases/latest
           version-query: .tag_name | sub("^electron-"; "")
-          url-query: .assets[] | select(.name=="thoughts_" + $version + "_amd64.deb") | .browser_download_url
+          url-query: .assets[] | select(.name=="thoughts_" + $version + "_amd64.deb")
+            | .browser_download_url
       - type: file
         only-arches: [aarch64]
-        url: https://github.com/wanglin2/mind-map/releases/download/electron-0.13.1/thoughts_0.13.1_arm64.deb
-        sha256: eb46906f70136746914fbbeb2e4b9bcc08a797dfcbc1cf5dcb48f3b8a53f23da
+        url: https://github.com/wanglin2/mind-map/releases/download/electron-0.14.0/thoughts_0.14.0_arm64.deb
+        sha256: 4286e91acae7052cd21e4b8d438ab117fe1674d7420595d74c572585eb435ef1
         dest-filename: thoughts.deb
         x-checker-data:
           type: json
           url: https://api.github.com/repos/wanglin2/mind-map/releases/latest
           version-query: .tag_name | sub("^electron-"; "")
-          url-query: .assets[] | select(.name=="thoughts_" + $version + "_arm64.deb") | .browser_download_url
+          url-query: .assets[] | select(.name=="thoughts_" + $version + "_arm64.deb")
+            | .browser_download_url
       - type: script
         dest-filename: run.sh
         commands:
