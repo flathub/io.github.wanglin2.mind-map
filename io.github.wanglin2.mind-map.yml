@@ -41,8 +41,8 @@ modules:
             | .browser_download_url
       - type: file
         only-arches: [aarch64]
-        url: https://github.com/wanglin2/mind-map/releases/download/0.14.0/thoughts_0.14.0_arm64.deb
-        sha256: 4286e91acae7052cd21e4b8d438ab117fe1674d7420595d74c572585eb435ef1
+        url: https://github.com/wanglin2/mind-map/releases/download/0.15.0/thoughts_0.15.0_arm64.deb
+        sha256: ac06cd1f76732c3b553c7169181cc9c332e1d1f27ce63ee8d87fb760950d1664
         dest-filename: thoughts.deb
         x-checker-data:
           type: json
