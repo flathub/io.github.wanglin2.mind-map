@@ -30,8 +30,8 @@ modules:
     sources:
       - type: file
         only-arches: [x86_64]
-        url: https://github.com/wanglin2/mind-map/releases/download/0.18.1/thoughts_0.18.1_amd64.deb
-        sha256: 279c2d3f5a1113e4cd48ae2de22e736797b48b9d7c43ddd2cf79c35fb9be00e4
+        url: https://github.com/wanglin2/mind-map/releases/download/0.18.2/thoughts_0.18.2_amd64.deb
+        sha256: bfb421422dc4121eb69349666174ff170710080ca223e023cfcfa94330d6bbdc
         dest-filename: thoughts.deb
         x-checker-data:
           type: json
@@ -41,8 +41,8 @@ modules:
             | .browser_download_url
       - type: file
         only-arches: [aarch64]
-        url: https://github.com/wanglin2/mind-map/releases/download/0.18.1/thoughts_0.18.1_arm64.deb
-        sha256: 45bd72f0753f860521199c3d2d4a1cce5c7cd9c2b361b9361e50f08429f051da
+        url: https://github.com/wanglin2/mind-map/releases/download/0.18.2/thoughts_0.18.2_arm64.deb
+        sha256: 9ed12f7d2677d3416997fd6793a096f61198f28b2e094fe7fc868bda02cdd73e
         dest-filename: thoughts.deb
         x-checker-data:
           type: json
